@@ -79,11 +79,11 @@
           "description": "Какой тип опроса должен быть создан?",
           "choices": {
             "normal-buttons": "Нормальный (Кнопки)",
-            "normal-selectmenu": "Нормальный (Выбрать Меню)",
+            "normal-selectmenu": "Нормальный (Выпадающее Меню)",
             "anonymous-buttons": "Анонимно (Кнопки)",
-            "anonymous-selectmenu": "Анонимно (Выбрать Меню)",
+            "anonymous-selectmenu": "Анонимно (Выпадающее Меню)",
             "hidden-buttons": "Скрытый (Кнопки)",
-            "hidden-selectmenu": "Скрытый (Выбрать Меню)"
+            "hidden-selectmenu": "Скрытый (Выпадающее Меню)"
           }
         },
         "maxchoices": {
@@ -154,11 +154,11 @@
           "description": "Какой тип опроса следует создать?",
           "choices": {
             "normal-buttons": "Нормальный (Кнопки)",
-            "normal-selectmenu": "Нормальный (Выбрать Меню)",
+            "normal-selectmenu": "Нормальный (Выпадающее Меню)",
             "anonymous-buttons": "Анонимно (Кнопки)",
-            "anonymous-selectmenu": "Анонимно (Выбрать Меню)",
+            "anonymous-selectmenu": "Анонимно (Выпадающее Меню)",
             "hidden-buttons": "Скрытый (Кнопки)",
-            "hidden-selectmenu": "Скрытый (Выбрать Меню)"
+            "hidden-selectmenu": "Скрытый (Выпадающее Меню)"
           }
         },
         "maxchoices": {
@@ -221,8 +221,8 @@
                 "color": {
                   "description": "Цвет кнопок.",
                   "choices": {
-                    "primary": "Начальное (Голубой)",
-                    "secondary": "Вторичное (Серый)",
+                    "primary": "Основной (Голубой)",
+                    "secondary": "Вторичный (Серый)",
                     "success": "Успешно (Зелёный)",
                     "danger": "Опасно (Красный)"
                   }
@@ -232,7 +232,7 @@
           }
         },
         "events": {
-          "description": "Изменить настройки эвентов.",
+          "description": "Изменить настройки ивентов.",
           "options": {
             "setting": {
               "description": "Какая настройка должна быть изменена?",
@@ -258,13 +258,13 @@
           "description": "Изменить язык этого сервера."
         },
         "threads": {
-          "description": "Изменить настройки тредов.",
+          "description": "Изменить настройки веток.",
           "options": {
             "setting": {
               "description": "Какая настройка должна быть изменена?",
               "choices": {
-                "create_thread_with_poll": "Создать тред, когда новый опрос создан",
-                "lock_and_unlock_thread_with_poll": "Закрыть/Открыть тред когда похожие опросы Закрыты/Переоткрыты"
+                "create_thread_with_poll": "Создать ветку, когда новый опрос создан",
+                "lock_and_unlock_thread_with_poll": "Закрыть/Открыть ветку когда похожие опросы Закрыты/Переоткрыты"
               }
             },
             "status": {
@@ -585,11 +585,11 @@
   },
   "errors": {
     "default": {
-      "title": "Задача завалена успешно!",
+      "title": "Задача провалена успешно!",
       "description": "Произошла ошибка, но я не могу сказать вам почему.\nПожалуйста, спросите поддержку для большей помощи."
     },
     "guild_command": {
-      "title": "Команда Сервера!",
+      "title": "Команда для сервера!",
       "description": "Эта команда может быть использована только на серверах."
     },
     "missing_bot_permissions": {
@@ -656,11 +656,11 @@
     "poll": {
       "already_closed": {
         "title": "Этот опрос уже закрыт!",
-        "description": "Вы не можете взаимодействовать с этим опросом, поскольку оно уже закрыто."
+        "description": "Вы не можете взаимодействовать с этим опросом, поскольку оно уже закрыт."
       },
       "not_closed": {
         "title": "Этот опрос не закрыт!",
-        "description": "Этот опрос не может быть переоткрыт, поскольку оно не закрыто."
+        "description": "Этот опрос не может быть открыт, поскольку он не закрыт."
       },
       "not_voted": {
         "title": "Не проголосовано за этот вариант!",
@@ -676,7 +676,7 @@
         "description_select": "Выбранное сообщение не опрос. Убедитесь, что вы выбрали верное сообщение опроса."
       },
       "participants_not_available": {
-        "title": "Список Участников не разрешён!",
+        "title": "Список участников не разрешён!",
         "description": "Список участников не доступен для этого опроса."
       },
       "vote_remove_not_allowed": {
@@ -716,20 +716,20 @@
     "export_csv": "Экспортировать как CSV"
   },
   "permissions": {
-    "add_reactions": "Добавить Реакции",
-    "view_audit_log": "Посмотреть Журнал Аудита",
-    "view_channel": "Посмотреть Каналы",
-    "send_messages": "Отправлять Сообщения",
-    "manage_messages": "Управлять Сообщениями",
-    "manage_guild": "Управлять Сервером",
-    "embed_links": "Встраивать Ссылки",
-    "attach_files": "Прикрепить Файлы",
-    "read_message_history": "Читать Историю Сообщений",
-    "mention_everyone": "Упоминать Всех",
-    "use_external_emojis": "Использовать Сторонние Эмодзи",
-    "manage_webhooks": "Управлять Вебхуками",
-    "manage_threads": "Управлять Тредами",
-    "create_public_threads": "Создавать Публичные Треды",
-    "send_messages_in_threads": "Отправлять Сообщения в Тредах"
+    "add_reactions": "Добавлять реакции",
+    "view_audit_log": "Просматривать Журнал Аудита",
+    "view_channel": "Просматривать каналы",
+    "send_messages": "Отправлять сообщения",
+    "manage_messages": "Управлять сообщениями",
+    "manage_guild": "Управлять сервером",
+    "embed_links": "Встраивать ссылки",
+    "attach_files": "Прикреплять файлы",
+    "read_message_history": "Читать историю сообщений",
+    "mention_everyone": "Упоминать всех",
+    "use_external_emojis": "Использовать сторонние эмодзи",
+    "manage_webhooks": "Управлять вебхуками",
+    "manage_threads": "Управлять ветками",
+    "create_public_threads": "Создавать открытые ветки",
+    "send_messages_in_threads": "Отправлять сообщения в ветках"
   }
 }
